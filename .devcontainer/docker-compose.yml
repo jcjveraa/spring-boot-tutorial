@@ -63,3 +63,4 @@ services:
       - 8080:8080
     volumes:
       - tomcat-conf:/usr/local/tomcat/conf
+      - ../tomcat_webapps:/usr/local/tomcat/webapps:cached
