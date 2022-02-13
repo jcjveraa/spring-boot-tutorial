@@ -1,4 +1,15 @@
 {
     "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true
+    "files.trimFinalNewlines": true,
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar"
+        ],
+        "exclude": [
+            "lib/spring-aop-5.3.9-javadoc.jar"
+        ]
+    },
+    "java.project.sourcePaths": [
+        "src"
+    ]
 }
