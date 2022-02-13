@@ -5,11 +5,10 @@
         "include": [
             "lib/**/*.jar"
         ],
-        "exclude": [
-            "lib/spring-aop-5.3.9-javadoc.jar"
-        ]
     },
+    
     "java.project.sourcePaths": [
-        "src"
+        "src",
+        "."
     ]
 }
