@@ -10,5 +10,6 @@
     "java.project.sourcePaths": [
         "src",
         "."
-    ]
+    ],
+    "java.autobuild.enabled": true
 }
