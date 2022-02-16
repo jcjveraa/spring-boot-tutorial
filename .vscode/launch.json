@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CodingBatBenchmark",
+            "request": "launch",
+            "mainClass": "cyou.jelle.fileWriterPathTest.CodingBatBenchmark",
+            "projectName": "workspace_1b93b146"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
