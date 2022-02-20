@@ -42,10 +42,4 @@ public class CricketCoach implements Coach {
 	public String getDailyFortune() {
 		return "Crickets chirping... " + fortuneService.getFortune();
 	}
-
-	@Override
-	public String getOnlineFortune() {
-		return "Crickets chirping... " + fortuneService.getOnlineForturne();
-	}
-
 }
