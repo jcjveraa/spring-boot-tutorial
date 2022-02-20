@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BeanLifeCycleDemoApp",
+            "request": "launch",
+            "mainClass": "com.luv2code.springdemo.BeanLifeCycleDemoApp",
+            "projectName": "SpringTutorial"
+        },
+        {
+            "type": "java",
             "name": "Launch BeanScopeDemo",
             "request": "launch",
             "mainClass": "com.luv2code.springdemo.BeanScopeDemo",
