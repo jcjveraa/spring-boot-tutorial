@@ -3,7 +3,6 @@ package com.luv2code.springdemo;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class HappyFortuneService implements FortuneService {

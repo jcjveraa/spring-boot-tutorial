@@ -13,9 +13,14 @@
     <!-- Define your beans here -->
     <bean id="myFortuneService" class="com.luv2code.springdemo.HappyFortuneService"></bean>
 
-    <bean id="myCoach" class="com.luv2code.springdemo.CricketCoach">
-        <!-- <constructor-arg ref="myFortune"/>-->
-        <property name="fortuneService" ref="myFortuneService"></property>
+    <bean id="myCoach" class="com.luv2code.springdemo.TrackCoach">
+         <constructor-arg ref="myFortuneService"/>
+    </bean>
+    
+     <bean id="myCricketCoach" class="com.luv2code.springdemo.CricketCoach">
+        <property name="fortuneService" ref="myFortuneService"/>
+        <property name="team" value="thebestcoach@luv2code.com"/>
+        <property name="emailAdress" value="Hangry Hippos"/>
     </bean>
 
 </beans>
