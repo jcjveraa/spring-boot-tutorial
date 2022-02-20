@@ -18,4 +18,9 @@ public class BaseballCoach implements Coach {
     public String getDailyFortune() {
         return fortuneService.getFortune();
     }
+
+	@Override
+	public String getOnlineFortune() {
+		return fortuneService.getOnlineForturne();
+	}
 }
