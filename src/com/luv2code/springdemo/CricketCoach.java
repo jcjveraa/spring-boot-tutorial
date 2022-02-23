@@ -28,6 +28,11 @@ public class CricketCoach implements Coach {
 		// TODO Auto-generated constructor stub
 	}
 
+	public CricketCoach(FortuneService fortuneService) {
+		setFortuneService(fortuneService);
+	}
+
+
 	// Setter injection
 	public void setFortuneService(FortuneService fortuneService) {
 		this.fortuneService = fortuneService;
@@ -41,5 +46,13 @@ public class CricketCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		return "Crickets chirping... " + fortuneService.getFortune();
+	}
+
+	public void init() {
+		System.out.println("Cricket coach init");
+	}
+
+	public void destroy() {
+		System.out.println("Cricket coach destroy");
 	}
 }

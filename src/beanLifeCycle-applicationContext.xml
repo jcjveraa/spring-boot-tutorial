@@ -14,7 +14,7 @@
     <!-- Define your beans here -->
     <bean id="myFortuneService" class="com.luv2code.springdemo.OnlineFortuneService"></bean>
 
-    <bean id="myCoach" class="com.luv2code.springdemo.TrackCoach" init-method="init" destroy-method="destroy">
+    <bean id="myCoach" class="com.luv2code.springdemo.CricketCoach" init-method="init" destroy-method="destroy">
         <constructor-arg ref="myFortuneService" />
     </bean>
 </beans>
