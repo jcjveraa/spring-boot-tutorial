@@ -27,10 +27,15 @@ public class TennisCoach implements Coach {
         return fortuneService.getFortune();
     }
 
+    // @Autowired
+    // public void setFortuneService(FortuneService fortuneService) {
+    //     this.fortuneService = fortuneService;
+    // }
+
+    // Spring will always run Autowired methods, apparently - doesn't need to be a 'setXXX' one
     @Autowired
-    public void setFortuneService(FortuneService fortuneService) {
+    public void randomMethod(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
-
 
 }
