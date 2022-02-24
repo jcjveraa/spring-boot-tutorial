@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 
+    @Autowired
     private FortuneService fortuneService;
 
     // @Autowired
@@ -13,9 +14,9 @@ public class TennisCoach implements Coach {
     //     this.fortuneService = fortuneService;
     // }
 
-    public TennisCoach() {
-        System.out.println(">> inside default ctor");
-    }
+    // public TennisCoach() {
+    //     System.out.println(">> inside default ctor");
+    // }
 
     @Override
     public String getDailyWorkout() {
@@ -33,9 +34,9 @@ public class TennisCoach implements Coach {
     // }
 
     // Spring will always run Autowired methods, apparently - doesn't need to be a 'setXXX' one
-    @Autowired
-    public void randomMethod(FortuneService fortuneService) {
-        this.fortuneService = fortuneService;
-    }
+    // @Autowired
+    // public void randomMethod(FortuneService fortuneService) {
+    //     this.fortuneService = fortuneService;
+    // }
 
 }
