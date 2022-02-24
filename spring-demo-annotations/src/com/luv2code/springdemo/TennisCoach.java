@@ -8,9 +8,13 @@ public class TennisCoach implements Coach {
 
     private FortuneService fortuneService;
 
-    @Autowired
-    public TennisCoach(FortuneService fortuneService) {
-        this.fortuneService = fortuneService;
+    // @Autowired
+    // public TennisCoach(FortuneService fortuneService) {
+    //     this.fortuneService = fortuneService;
+    // }
+
+    public TennisCoach() {
+        System.out.println(">> inside default ctor");
     }
 
     @Override
@@ -22,5 +26,11 @@ public class TennisCoach implements Coach {
     public String getDailyFortune() {
         return fortuneService.getFortune();
     }
+
+    @Autowired
+    public void setFortuneService(FortuneService fortuneService) {
+        this.fortuneService = fortuneService;
+    }
+
 
 }
