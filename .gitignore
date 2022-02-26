@@ -25,3 +25,5 @@ hs_err_pid*
 # webapps folder
 tomcat_webapps/*
 build/
+
+!*_lib/*.jar

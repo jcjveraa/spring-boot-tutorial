@@ -68,6 +68,7 @@
         "c:\\Users\\j\\source\\repos\\spring-tutorial\\spring_lib\\spring-webmvc-5.3.9-sources.jar",
         "c:\\Users\\j\\source\\repos\\spring-tutorial\\spring_lib\\spring-websocket-5.3.9.jar",
         "c:\\Users\\j\\source\\repos\\spring-tutorial\\spring_lib\\spring-websocket-5.3.9-javadoc.jar",
-        "c:\\Users\\j\\source\\repos\\spring-tutorial\\spring_lib\\spring-websocket-5.3.9-sources.jar"
+        "c:\\Users\\j\\source\\repos\\spring-tutorial\\spring_lib\\spring-websocket-5.3.9-sources.jar",
+        "c:\\Users\\j\\source\\repos\\spring-tutorial\\shared_lib\\gson-2.9.0.jar"
     ]
 }
