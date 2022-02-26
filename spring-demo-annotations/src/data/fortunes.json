@@ -1,0 +1,20 @@
+{
+    "fortunes": [
+        {
+            "id": 1,
+            "fortune": "\"By working one can bend fortune. She is fond of crafty men.\" Gustave Flaubert"
+        },
+        {
+            "id": 2,
+            "fortune": "\"Every man is the architect of his own fortune.\" Anonymous"
+        },
+        {
+            "id": 3,
+            "fortune": "\"Fortune’s wheel is ever turning.\" Proverb"
+        },
+        {
+            "id": 4,
+            "fortune": "\"Fortune favors the prepared mind.\" Louis Pasteur"
+        }
+    ]
+}

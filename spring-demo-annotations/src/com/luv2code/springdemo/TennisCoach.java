@@ -14,7 +14,7 @@ public class TennisCoach implements Coach {
     private String email;
 
     @Autowired
-    @Qualifier("randomFortuneService")
+    @Qualifier("fileFortuneService")
     private FortuneService fortuneService;
 
     // @Autowired
@@ -24,9 +24,10 @@ public class TennisCoach implements Coach {
 
     // Don't even need the default ctor
 
-    // public TennisCoach() {
-    //     System.out.println(">> inside default ctor");
-    // }
+    public TennisCoach() {
+        System.out.println(">> inside default ctor");
+        System.out.println(team); //@Value is after ctor it seems
+    }
 
     @Override
     public String getDailyWorkout() {
