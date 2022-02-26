@@ -4,9 +4,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- <context:component-scan base-package="com.luv2code.springdemo" />
-    <context:property-placeholder location="classpath:sport.properties"/> -->
-
+    <!-- Flip between the two at runtime to see other classes being loaded -->
     <bean id="myBean" class="cyou.jelle.springruntimeconfigtest.Baz"/>
+    <!-- <bean id="myBean" class="cyou.jelle.springruntimeconfigtest.Bar"/> -->
 
 </beans>
