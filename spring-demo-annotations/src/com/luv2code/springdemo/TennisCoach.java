@@ -1,13 +1,14 @@
 package com.luv2code.springdemo;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")
 public class TennisCoach implements Coach {
 
     @Value("${team}")
@@ -41,15 +42,14 @@ public class TennisCoach implements Coach {
         return fortuneService.getFortune();
     }
 
-    // @Autowired
-    // public void setFortuneService(FortuneService fortuneService) {
-    //     this.fortuneService = fortuneService;
-    // }
+    @PreDestroy
+    public void preDestroy() {
+        System.out.println("It's the final countdown");
+    }
 
-    // Spring will always run Autowired methods, apparently - doesn't need to be a 'setXXX' one
-    // @Autowired
-    // public void randomMethod(FortuneService fortuneService) {
-    //     this.fortuneService = fortuneService;
-    // }
+    @PostConstruct
+    public void postConstruct() {
+        System.out.println("A new star is born");
+    }
 
 }
