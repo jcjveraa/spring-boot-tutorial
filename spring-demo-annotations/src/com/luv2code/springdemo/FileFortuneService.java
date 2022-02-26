@@ -6,7 +6,6 @@ import java.nio.file.Files;
 import java.util.Random;
 
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 
@@ -37,10 +36,10 @@ public class FileFortuneService implements FortuneService {
             JsonElement fortunesArray = jsonRoot.get("fortunes");
 
             fortunes = gson.fromJson(fortunesArray, Fortune[].class);
-            
+
         } catch (IOException e) {
-                       e.printStackTrace();
+            e.printStackTrace();
         }
     }
-    
+
 }
