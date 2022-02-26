@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.util.Random;
 
+import javax.annotation.PostConstruct;
+
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
@@ -17,6 +19,9 @@ import org.springframework.stereotype.Component;
 public class FileFortuneService implements FortuneService {
 
     private Fortune[] fortunes;
+    
+    @Value("${fortunesFile}")
+    private String fortunesFile;
 
     @Override
     public String getFortune() {
@@ -25,8 +30,8 @@ public class FileFortuneService implements FortuneService {
         return fortunes[randomIndex].fortune;
     }
 
-    public FileFortuneService(@Value("${fortunesFile}") String fortunesFile) {
-
+    @PostConstruct
+    private void postConstruct() {
         try {
             File resource = new ClassPathResource(fortunesFile).getFile();
             String json = new String(Files.readAllBytes(resource.toPath()));
