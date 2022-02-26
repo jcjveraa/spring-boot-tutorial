@@ -10,13 +10,16 @@ public class App {
             ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContextRuntimeTest.xml");
             Foo bean = context.getBean("myBean", Foo.class);
             bean.SayHello();
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                context.close();
-                e.printStackTrace();
-            }
+            context.close();
+            sleepOneSecond();
         }
-        
+    }
+
+    private static void sleepOneSecond() {
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
