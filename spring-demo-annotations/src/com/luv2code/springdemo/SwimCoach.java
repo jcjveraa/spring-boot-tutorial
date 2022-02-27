@@ -1,9 +1,17 @@
 package com.luv2code.springdemo;
 
+import org.springframework.beans.factory.annotation.Value;
+
 /**
  * SwimCoach
  */
 public class SwimCoach implements Coach {
+
+    @Value("${team}")
+    public String team;
+
+    @Value("${email}")
+    public String email;
 
     private FortuneService fortuneService;
 
