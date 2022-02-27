@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SwimJavaConfigDemoApp",
+            "request": "launch",
+            "mainClass": "com.luv2code.springdemo.SwimJavaConfigDemoApp",
+            "projectName": "spring-demo-annotations_78c9098b"
+        },
+        {
+            "type": "java",
+            "name": "Launch JavaConfigDemoApp",
+            "request": "launch",
+            "mainClass": "com.luv2code.springdemo.JavaConfigDemoApp",
+            "projectName": "spring-demo-annotations_78c9098b"
+        },
+        {
+            "type": "java",
             "name": "Launch AnnotationBeanScopeDemoApp",
             "request": "launch",
             "mainClass": "com.luv2code.springdemo.AnnotationBeanScopeDemoApp",
