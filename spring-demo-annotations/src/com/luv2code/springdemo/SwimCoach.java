@@ -8,10 +8,10 @@ import org.springframework.beans.factory.annotation.Value;
 public class SwimCoach implements Coach {
 
     @Value("${team}")
-    public String team;
+    private String team;
 
     @Value("${email}")
-    public String email;
+    private String email;
 
     private FortuneService fortuneService;
 
@@ -29,5 +29,11 @@ public class SwimCoach implements Coach {
         return fortuneService.getFortune();
     }
 
+    public String getEmail() {
+        return email;
+    }
     
+    public String getTeam() {
+        return team;
+    }
 }

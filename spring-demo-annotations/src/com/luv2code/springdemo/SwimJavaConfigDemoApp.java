@@ -10,8 +10,8 @@ public class SwimJavaConfigDemoApp {
 
         System.out.println(coach.getDailyWorkout());
         System.out.println(coach.getDailyFortune());
-        System.out.println(coach.email);
-        System.out.println(coach.team);
+        System.out.println(coach.getEmail());
+        System.out.println(coach.getTeam());
 
         context.close();
     }
