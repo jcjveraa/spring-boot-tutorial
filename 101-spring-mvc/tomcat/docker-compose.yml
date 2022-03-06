@@ -1,5 +1,8 @@
 version: '3.8'
 
+volumes:
+  tomcat-conf:
+
 services:
   tomcat:
     container_name: tomcat
@@ -9,3 +12,4 @@ services:
       - 8080:8080
     volumes:
       - ./tomcat-webapps:/usr/local/tomcat/webapps:cached
+      - tomcat-conf:/usr/local/tomcat/conf

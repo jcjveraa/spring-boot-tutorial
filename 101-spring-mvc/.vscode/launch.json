@@ -5,52 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "Launch PracticeDemoApp",
+            "name": "Build .war and deploy",
+            "type": "PowerShell",
             "request": "launch",
-            "mainClass": "com.luv2code.springdemo.PracticeDemoApp",
-            "projectName": "spring-demo-annotations_78c9098b"
-        },
-        {
-            "type": "java",
-            "name": "Launch SwimJavaConfigDemoApp",
-            "request": "launch",
-            "mainClass": "com.luv2code.springdemo.SwimJavaConfigDemoApp",
-            "projectName": "spring-demo-annotations_78c9098b"
-        },
-        {
-            "type": "java",
-            "name": "Launch JavaConfigDemoApp",
-            "request": "launch",
-            "mainClass": "com.luv2code.springdemo.JavaConfigDemoApp",
-            "projectName": "spring-demo-annotations_78c9098b"
-        },
-        {
-            "type": "java",
-            "name": "Launch AnnotationBeanScopeDemoApp",
-            "request": "launch",
-            "mainClass": "com.luv2code.springdemo.AnnotationBeanScopeDemoApp",
-            "projectName": "spring-demo-annotations_78c9098b"
-        },
-        {
-            "type": "java",
-            "name": "Launch App",
-            "request": "launch",
-            "mainClass": "cyou.jelle.springruntimeconfigtest.App",
-            "projectName": "spring-demo-annotations_78c9098b"
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch AnnotationDemoApp",
-            "request": "launch",
-            "mainClass": "com.luv2code.springdemo.AnnotationDemoApp",
-            "projectName": "spring-demo-annotations_78c9098b"
+            "script": "${workspaceFolder}/deploy-scripts/deploy.ps1",
+            "cwd": "${workspaceFolder}"
         }
+       
     ]
 }
