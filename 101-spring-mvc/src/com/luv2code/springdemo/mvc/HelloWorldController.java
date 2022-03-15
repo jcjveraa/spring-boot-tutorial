@@ -1,6 +1,9 @@
 package com.luv2code.springdemo.mvc;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -14,6 +17,19 @@ public class HelloWorldController {
 
     @PostMapping("/processForm")
     public String processForm() {
+        return "helloworld";
+    }
+
+    @PostMapping("/processFormV2")
+    public String letsShoutDude(HttpServletRequest request, Model model) {
+
+        String name = request.getParameter("studentName");
+        name = name.toUpperCase();
+
+        String message = "Yo! " + name;
+
+        model.addAttribute("message", message);
+
         return "helloworld";
     }
 }

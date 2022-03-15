@@ -9,5 +9,5 @@ public class HomeController {
     public String showMyPage() {
         return "main-menu";
     }
-    
+
 }
