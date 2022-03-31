@@ -8,7 +8,7 @@
 <body>
 
 Student confirmed! 
-${student.lastName}, ${student.firstName}.
+${student.lastName}, ${student.firstName}, they live in ${student.country}.
 </body>
 
 </html>
