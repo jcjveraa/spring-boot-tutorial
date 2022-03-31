@@ -1,4 +1,5 @@
-Remove-Item .\tomcat\tomcat-webapps\*.war 
+Remove-Item .\tomcat\tomcat-webapps\*.war
+Start-Sleep -Seconds 1
 Copy-Item -Path .\WebContent -Destination .\deploy\Webcontent -Container -Recurse
 Copy-Item -Path ..\spring_lib\spring*.jar -Destination .\deploy\WebContent\WEB-INF\lib
 Copy-Item -Path .\bin -Recurse -Destination .\deploy\WebContent\WEB-INF\classes
